@@ -1,0 +1,75 @@
+/***************** Naming my grid ares ****************/
+.main-head {
+    grid-area: head;
+}
+
+.main-nav {
+    grid-area: nav;
+}
+
+.content {
+    grid-area: main-content;
+}
+
+.side {
+    grid-area: sidebar;
+}
+
+.ad {
+    grid-area: advertising;
+}
+
+.footer {
+    grid-area: main-footer;
+}
+
+/**************** defining my wrapper **********/
+
+.wrapper > * {
+    border: 2px solid #f08c00;
+    background-color: #ffec99;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.wrapper {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+          "head"
+          "nav"
+          "main-content"
+          "sidebar"
+          "advertising"
+          "main-footer";
+}
+
+.main-nav ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+ul > li a {
+    text-decoration: none;
+}
+
+.main-nav ul>li {
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+
+
