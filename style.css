@@ -49,6 +49,7 @@
           "main-footer";
 }
 
+/*
 .main-nav ul {
     display: flex;
     flex-flow: row;
@@ -61,7 +62,7 @@ ul > li a {
 
 .main-nav ul>li {
     list-style-type: none;
-}
+} */
 
 
 
