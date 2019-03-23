@@ -49,6 +49,20 @@
           "main-footer";
 }
 
+.main-nav ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+ul > li a {
+    text-decoration: none;
+}
+
+.main-nav ul>li {
+    list-style-type: none;
+}
+
 
 
 
