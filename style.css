@@ -42,5 +42,11 @@
     }
 }
 
+@supports (display: grid) {
+    .tip {
+        display: none;
+    }
+}
+
 
 
