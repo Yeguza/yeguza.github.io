@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Coming Soon</title>
+		<meta name="author" content="kumenogatz">
+		<meta name="description" content="This is the coming soon page">
+		<style type="text/css">
+            @font-face {
+            	font-family: "Lato-Regular";
+            	src: url("Lato-Regular.ttf");
+            }
+
+			body {
+				height: 100vh;
+				margin: 0;
+				font-family: "Lato-Regular";
+				color: whitesmoke;
+			}
+
+			#text-container {
+				position: absolute;
+				bottom: 45vh;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: auto;
+				font-size: 3em;
+				text-align: center;
+				padding: 20px 0;
+			}
+
+			#comming-soon-container {
+				position: absolute;
+				bottom: 27vh;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: auto;
+				font-size: 3em;
+				font-weight: bolder;
+				padding: 20px 0;
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-position: center;
+				object-fit: fill;
+			}
+		</style>
+	</head>
+	<body>
+		<picture>
+			<source media="(max-width: 500px)" srcset="kumenogatz_medium.jpg">
+            <source media="(min-width: 720px)" srcset="kumenogatz.jpg">
+            <img src="kumenogatz.jpg" alt="kumenogatz">
+        </picture>
+		<div id="text-container">
+			Your best Online market place for<br> Selling, buying and advertising your business.
+		</div>
+		<div id="comming-soon-container">
+			COMING SOON!!!
+		</div>
+	</body>
+</html> 
+
+
+
