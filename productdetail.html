@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset='utf-8'>
+        <title>Kumenogatz</title>
+        <meta name='author' content='Baraka Ashery'>
+        <meta name='description' content="This is the Product list page">
+        <meta name='keywords' content=''>
+        <meta name='viewport' content="width=device-width, initial scale=1">
+        <!-------- styles ------->
+        <link href='./fontawesome-5.9.0-web/css/all.min.css' rel="stylesheet">
+        <link href='flickity.min.css' rel="stylesheet" media='screen'>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <!------- javascript ----->
+        <script src="jquery-3.4.1.min.js"></script>
+        <script src='flickity.pkgd.min.js'></script>
+    </head>
+    <body class="is-bg-color">
+        <div id="header">
+            <div id="logo">
+                <span id="ku">Ku</span><span id="me">me</span><span id="no">no</span><span id="ga">ga</span>
+            </div>
+            <div id="menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="carousel">
+            <div class="carousel-cell">
+                <img src="./photos/image1.jpg" class="carousel-cell-image" data-flickity-lazyload="./photos/image1.jpg" />
+            </div>
+            <div class="carousel-cell">
+                <img src="./photos/image2.jpg" class="carousel-cell-image" data-flickity-lazyload="./photos/image2.jpg" />
+            </div>
+            <div class="carousel-cell">
+                <img src="./photos/image3.jpg" class="carousel-cell-image" data-flickity-lazyload="./photos/image3.jpg" />
+            </div>
+            <div class="carousel-cell">
+                <img src="./photos/image4.jpg" class="carousel-cell-image" data-flickity-lazyload="./photos/image4.jpg" />
+            </div>
+        </div>
+
+        <div id="ad-container" class="center is-bordered-around is-shadow is-white is-round">
+            COMING SOON
+        </div>
+        <div id="product-info-container" class="is-bordered-around is-shadow is-white is-round">
+            <div id="product-name" class="product-info is-border-bottom">
+                <span style="margin-right: 5px;"><b>Product Name :</b></span>
+                <span>Samsung Galaxy S10</span>
+            </div>
+            <div id="product-price" class="product-info is-border-bottom">
+                <span style="margin-right: 5px;"><b>Price :</b></span>
+                <span>1,200,000 Tshs.</span>
+            </div>
+            <div id="seller-name" class="product-info is-border-bottom">
+                <span style="margin-right: 5px;"><b>Seller Name :</b></span>
+                <span>Nuru Ricko.</span>
+            </div>
+            <div id="product-description" class="product-info is-border-bottom">
+                <span style="margin-right: 5px;"><b>Product Description :</b></span>
+                <span>This is the samsung galaxy s10 unboxed and it have a high perfomance</span>
+            </div>
+        </div>
+        <div id="contact-seller-containers" class="center is-bordered-around is-shadow is-white is-round">
+            <a href="" id="call-seller" class="contact-button center is-gradient-1"><span style="margin-right: 10px">CALL</span><i class="fas fa-phone contact-icon"></i></a>
+            <a href="" id="message-seller" class="contact-button center is-gradient-2"><span style="margin-right: 10px">MESSAGE</span><i class="fas fa-envelope contact-icon"></i></a>
+        </div>
+        <!--------- footer -------->
+        <div id="footer" class="is-bordered-around is-shadow is-white is-round">
+            <div id="about-us" class="footer-item is-border-bottom">ABOUT US</div>
+            <div id="privacy-policy" class="footer-item is-border-bottom">PRIVACY POLICY</div>
+            <div id="terms" class="footer-item is-border-bottom">TERMS OF USE</div>
+            <div id="legal-notice" class="footer-item is-border-bottom">LEGAL NOTICE</div>
+        </div>
+        <!------- social media icons ------->
+        <div id="social-media" class="vertical-center">
+            <i class="fab fa-facebook-f icon"></i>
+            <i class="fab fa-instagram icon"></i>
+            <i class="fab fa-linkedin icon"></i>
+            <i class="fab fa-youtube icon"></i>
+        </div>
+        <!------- whatsapp floating icon -------->
+        <div class="whatsapp-float center">
+            <i class="fab fa-whatsapp my-float"></i>
+        </div>
+        <script src="corousel.js"></script>
+    </body>
+</html>
+
