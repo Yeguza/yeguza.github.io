@@ -1,0 +1,118 @@
+* { margin: 0px; }
+
+.support {
+	padding: 10px;
+	font-family: "Lato-Regular";
+	margin: 10px;
+	font-weight: lighter;
+	font-size: 0.9rem;
+	min-height: 100px;
+}
+
+.product-container {
+	min-height: 200px;
+	margin: 10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: column nowrap;
+	        flex-flow: column nowrap;
+	font-family: 'Lato-Black';
+	font-size: 1rem;
+}
+
+
+.product-image {
+	-o-object-fit: cover;
+	   object-fit: cover;
+	width: 100%;
+}
+
+.image-container {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 1 auto;
+	        flex: 1 1 auto;
+	overflow: hidden;
+	margin: 5px;
+	border-radius: 0.5rem;
+}
+
+.detail-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: column nowrap;
+	        flex-flow: column nowrap;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 1 auto;
+	        flex: 1 1 auto;
+	padding:0 20px;
+	color: #2d343e;
+	margin: 0 5px 5px 5px;
+	border-radius: 0.5rem;
+}
+
+.item-price, .item-name {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 1 auto;
+	        flex: 1 1 auto;
+	padding: 10px;
+}
+
+.item-price {
+	font-family: "Lato-Regular";
+	font-weight: lighter;
+	font-size: 0.8rem;
+}
+
+.price-tag {
+	color: #ffffff;
+	padding: 7px 5px;
+	position: absolute;
+	bottom: 10%;
+	left: 5%;
+	font-family: "Lato-Regular";
+	font-weight: bolder;
+	font-size: 0.7em;
+	border-radius: 1em;
+	color: #2d343e;
+	z-index: 10;
+	background-image: -webkit-gradient(linear, left top, right top, from(#1fa2ff), color-stop(#12d8fa), to(#a6ffcb));
+	background-image: -webkit-linear-gradient(left, #1fa2ff, #12d8fa, #a6ffcb);
+	background-image: -o-linear-gradient(left, #1fa2ff, #12d8fa, #a6ffcb);
+	background-image: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+}
+
+
+#footer {
+	margin: 10px;
+}
+
+/****************************** pagination **********************/
+
+.pagination {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row nowrap;
+	        flex-flow: row nowrap;
+	margin: 20px;
+}
+
+.pagination-item {
+	font-family: "Lato-Black";
+	padding: 6px 10px;
+}
+
+.pagination-item:nth-child(2) {
+	background-color: #2d343e;
+	color: whitesmoke;
+	border-radius: 100%;
+}
+
