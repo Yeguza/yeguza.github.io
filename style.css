@@ -142,7 +142,7 @@
 .product-info {
   min-height: auto;
   padding: 20px 10px;
-  font-family: "Lato-Regular";
+  font-family: 'Unna', serif;
   min-height: 30px;
   color: #2d343e;
 }
@@ -166,7 +166,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: 'Lato-Black';
+  font-family: 'Unna', serif;
   font-size: 1.0em;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 
               0 1px 5px 0 rgba(0, 0, 0, 0.12), 
