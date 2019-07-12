@@ -1,8 +1,11 @@
 * { margin: 0px; }
 
+html {
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
 .support {
 	padding: 10px;
-	font-family: "Lato-Regular";
 	margin: 10px;
 	font-weight: lighter;
 	font-size: 0.9rem;
@@ -10,6 +13,7 @@
 }
 
 .product-container {
+	font-family: 'Lato', sans;
 	min-height: 200px;
 	margin: 10px;
 	display: -webkit-box;
@@ -19,7 +23,6 @@
 	-webkit-box-direction: normal;
 	    -ms-flex-flow: column nowrap;
 	        flex-flow: column nowrap;
-	font-family: 'Lato-Black';
 	font-size: 1rem;
 }
 
@@ -54,6 +57,11 @@
 	color: #2d343e;
 	margin: 0 5px 5px 5px;
 	border-radius: 0.5rem;
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.item-name {
+	color: black;
 }
 
 .item-price, .item-name {
@@ -64,7 +72,6 @@
 }
 
 .item-price {
-	font-family: "Lato-Regular";
 	font-weight: lighter;
 	font-size: 0.8rem;
 }
@@ -75,7 +82,7 @@
 	position: absolute;
 	bottom: 10%;
 	left: 5%;
-	font-family: "Lato-Regular";
+	font-family: 'Lato', sans;
 	font-weight: bolder;
 	font-size: 0.7em;
 	border-radius: 1em;
@@ -103,11 +110,11 @@
 	    -ms-flex-flow: row nowrap;
 	        flex-flow: row nowrap;
 	margin: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .pagination-item {
-	font-family: "Lato-Black";
-	padding: 6px 10px;
+	padding: 10px 16px;
 }
 
 .pagination-item:nth-child(2) {
