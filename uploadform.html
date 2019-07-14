@@ -1,0 +1,128 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Upload your Ad</title>
+	<meta name="author" content="Baraka Ashery">
+	<meta name="keywords" content="">
+	<meta name='viewport' content="width=device-width, initial scale=1">
+		<!----------------- styles ------------------------>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="uploadform.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300&display=swap" rel="stylesheet"> 
+		<!-------------------- scripts ----------------------->
+    <script src="https://kit.fontawesome.com/75de682bb9.js"></script>
+	<script src="jquery-3.4.1.min.js"></script>
+</head>
+    <body class="is-bg-color">
+    	<div id="header" class="nav-down">
+            <div id="menu" onclick="showMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div id="logo">
+                <span id="ku">Ku</span><span id="me">me</span><span id="no">no</span><span id="ga">ga</span>
+            </div>
+            <div id="login">
+                <i class="fas fa-user"></i>
+            </div>
+        </div>
+        <div id="side-nav" class="is-bg-color is-shadow">
+            <div class="top"><div onclick="hideMenu()"><i class="fas fa-window-close"></i></div><span>&#128540</span></div>
+            <p class="category is-border-bottom"><span>Cellphones & smartphones</span><span class="arrow">&#8250</span></p>
+            <p class="category is-border-bottom"><span>Laptop & Notebooks</span><span class="arrow">&#8250</span></p>
+            <p class="category is-border-bottom"><span>Desktop & Components</span><span class="arrow">&#8250</span></p>
+            <p class="category is-border-bottom"><span>Networking & Servers</span><span class="arrow">&#8250</span></p>
+            <p class="category is-border-bottom"><span>Cameras & Videos</span><span class="arrow">&#8250</span></p>
+            <p class="category is-border-bottom"><span>Camera Drones & Components</span><span class="arrow">&#8250</span></p>
+            <p class="category is-border-bottom"><span>Printers, Scanners & componets</span><span class="arrow">&#8250</span></p>
+            <p class="category is-border-bottom"><span>Routers</span><span class="arrow">&#8250</span></p>
+            <p class="category is-border-bottom"><span>Tv's & componets</span><span class="arrow">&#8250</span></p>
+            <p class="category is-border-bottom"><span>Portable audio & Headphones</span><span class="arrow">&#8250</span></p>
+        </div>
+        <div id="post-free" class="vertical-center is-shadow is-round">
+        	<p>Post your add for free</p>
+        </div>
+        <form action="kumenoga/upload/" method="Post" enctype="multipart/form-data">
+        	<div id="name-container" class="entry">
+        		<label for="seller-name">
+        			<span style="margin-right: 5px;" class="info">Your name</span><span>&#8727</span>
+        		</label>
+        		<input type="text" name="seller_name" id="seller-name">
+        	</div>
+
+        	<div id="product-name-container" class="entry">
+        		<label for="product-name">
+        			<span style="margin-right: 5px;" class="info">Product Name</span><span>&#8727</span>
+        		</label>
+        		<input type="text" name="product_name" id="product-name">
+        	</div>
+
+        	<div id="description-container" class="entry">
+        		<label for="product-description">
+        			<span style="margin-right: 5px;" class="info">Product Description</span><span>&#8727</span>
+        		</label>
+        		<textarea name="product_description" id="product-description"></textarea>
+        		<p class="tip">
+        			<span class="important">
+        				<span style="color: #039BE5; margin-right: 5px;">Important!</span> Describe you product as factual as possible. Describe the condition of your product, it's size and much more.
+        			</span>
+        		</p>
+        	</div>
+
+        	<div id="product-price-container" class="entry">
+        		<label for="product-price">
+        			<span class="info">Enter Price</span><span>&#8727</span>
+        		</label>
+        		<input type="text" name="product_price" id="product-price">
+        		<p class="tip">
+        			<span class="important">
+        				<span style="color: #039BE5; margin-right: 5px">Important!</span>Please set your price to help your customes buy.
+        			</span>
+        		</p>
+        	</div>
+
+        	<div id="category-container" class="entry">
+        		<label for="product-category">
+        			<span style="margin-right: 5px;" class="info">Choose Category</span><span>&#8727</span>
+        		</label>
+        		<input type="text" name="product_name" id="product-name">
+        	</div>
+
+        	<div id="region-container" class="entry">
+        		<label for="region">
+        			<span style="margin-right: 5px;" class="info">Choose Region</span><span style="color: #2d343e;"><i class="fas fa-map-marker"></i></span>
+        		</label>
+        		<input type="text" name="product_name" id="product-name">
+        		<p class="tip">
+        			<span class="important">
+        				<span style="color: #039BE5; margin-right: 5px;">Important!</span>For now we are supporting only two regions.
+        			</span>
+        		</p>
+        	</div>
+
+        	<div id="upload-images-container" class="entry">
+        		<!--
+        		<label for="upload-image">
+        			<span style="margin-right: 5px;" class="info">Upload images</span><span style="color: #2d343e;"><i class="fas fa-camera"></i></span>
+        		</label>
+        	-->
+        		<div class="upload_my_images">
+        			<div id="upload_field"><i class="fas fa-camera"></i><span>Click to choose photos</span></div>
+        			<input name="photos" type="file" accept="image/*" id="upload_image" multiple>
+        		</div>
+        		<!---<div id="result_1" class="result"></div>-->
+        	</div>
+        </form>
+        <div id="post_button">
+        		<button type="submit"> Post your Add</button>
+        	</div>
+        <script type="text/javascript" src="header.js"></script>
+        <script type="text/javascript" src="sidenav.js"></script>
+        <script type="text/javascript" src="upload.js"></script>
+    </body>
+</html>
