@@ -1,0 +1,233 @@
+* {
+	margin: 0;
+}
+
+#post-free {
+	background-color: #0f4a6c;
+	min-height: 60px;
+	color: whitesmoke;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin-right: 0;
+}
+
+#post-free>h3 {
+	color: whitesmoke;
+	padding: 10px 10px 0 10px;
+}
+
+#post-free>p {
+	padding: 10px;
+	color: whitesmoke;
+}
+
+
+.entry {
+	display: flex;
+	flex-flow: column nowrap;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin-top: 15px;
+}
+
+.entry>input {
+	height: 40px;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	border: rgba(34, 34, 34, 0.2) solid 1px;
+	padding: 5px;
+}
+
+.entry>label {
+	margin: 5px 0;
+}
+
+input:focus {
+	border: solid 2px #039BE5;
+}
+
+
+.entry>textarea {
+	height: 200px;
+	border-radius: 5px;
+	resize: vertical;
+	outline: none;
+	border: none;
+	border: rgba(34, 34, 34, 0.2) solid 1px;
+}
+
+textarea:focus {
+	border: solid 2px #039BE5;
+}
+
+.entry label {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+form {
+	margin: 10px;
+	padding: 20px;
+}
+
+.important {
+	font-size: 0.8em;
+	color: #2d343e;
+}
+
+.info {
+	color: black;
+	font-weight: 200;
+}
+
+#post_button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 30px 20px;
+}
+
+#post_button button {
+	width: 100%;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #39D2B4;
+	color: whitesmoke;
+	border: none;
+	margin: 0 20px;
+	font-size: 1em;
+	font-family: 'Source Sans Pro', sans-serif;
+	border-radius: 5px;
+}
+
+/***************************** Upload image **********************/
+
+#upload-images-container {
+	margin-top: 30px;
+}
+
+.fa-camera {
+	margin-right: 5px;
+}
+
+
+.upload_my_images {
+	position: relative;
+	background: #39D2B4;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 40px;
+}
+
+.upload_my_images label {
+  padding: 5px 20px;
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  transition: all .4s;
+}
+
+.upload_my_images input {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  opacity: 0.01;
+  cursor: pointer;
+}
+
+
+
+/********************* region dropdown *********************/
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: var(--border);
+  border-radius: var(--radius);
+  height: 40px;
+  padding: var(--gutter);
+  background-color: white;
+  padding: 0 10px;
+  border: rgba(34, 34, 34, 0.2) solid 1px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.input__active {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border: solid 2px #039BE5;
+}
+
+.input__placeholder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input:hover {
+  cursor: pointer;
+}
+
+.placeholder {
+  color: var(--colorPlaceholder);
+}
+
+.input__selected {
+  color: var(--colorPrimaryDark);
+}
+
+/* Dropdown styling */
+
+.structure {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: scroll;
+  background-color: white;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.structure>div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 16px;
+  margin: 0 20px;
+  border-bottom: rgba(34, 34, 34, 0.2) solid 1px;
+}
+
+.structure>div:last-child {
+	border-bottom: none;
+}
+
+.structure>div:hover {
+  background-color: var(--colorAccent);
+  color: white;
+  cursor: pointer;
+}
+
+
+
+.structure>div>p {
+  font-weight: 400;
+  font-size: 1em;
+  color: var(--colorPlaceholder);
+}
+
+.hide {
+  display: none;
+}
+
+
+
+
+
