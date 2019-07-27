@@ -75,7 +75,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 120;
+  z-index: 1200;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem;
   font-weight: light;
