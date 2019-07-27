@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+	    <title>kumenogatz.com</title>
+	    <meta name="author" content="Baraka Ashery">
+	    <meta name="keywords" content="">
+	    <meta name='viewport' content="width=device-width, initial-scale=1">
+		<!----------------- styles ------------------------>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="product_list.css" rel="stylesheet" type="text/css">
+        <link href="home_page.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-152x152-precomposed.png" type="image/png" sizes="152x152">
+        <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-152x152-precomposed.png" type="image/png" sizes="120x120">
+        <link rel="stylesheet" type="text/css" href="./fontawesome/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:900&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Caveat:700&display=swap" rel="stylesheet">
+		<!-------------------- scripts ----------------------->
+        <!--<script src="https://kit.fontawesome.com/75de682bb9.js"></script>-->
+	    <script src="jquery-3.4.1.min.js"></script>
+    </head>
+    <body class="is-bg-color">
+        <div id="header" class="nav-down">
+            <div id="menu" onclick="showMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div id="logo">
+                <span id="ku">Ku</span><span id="me">me</span><span id="no">no</span><span id="ga">ga</span>
+            </div>
+            <div id="login">
+                <i class="fas fa-user"></i>
+            </div>
+        </div>
+        <div id="side-nav" class="is-bg-color is-shadow">
+            <div class="top"><div onclick="hideMenu()"><i class="fas fa-window-close"></i></div><span>&#128540</span></div>
+            <p class="side-nav-category"><span>Cellphones & smartphones</span><span class="arrow">&#8250</span></p>
+            <p class="side-nav-category"><span>Laptop & Notebooks</span><span class="arrow">&#8250</span></p>
+            <p class="side-nav-category"><span>Desktop & Components</span><span class="arrow">&#8250</span></p>
+            <p class="side-nav-category"><span>Networking & Servers</span><span class="arrow">&#8250</span></p>
+            <p class="side-nav-category"><span>Cameras & Videos</span><span class="arrow">&#8250</span></p>
+            <p class="side-nav-category"><span>Camera Drones & Components</span><span class="arrow">&#8250</span></p>
+            <p class="side-nav-category"><span>Printers, Scanners & componets</span><span class="arrow">&#8250</span></p>
+            <p class="side-nav-category"><span>Routers</span><span class="arrow">&#8250</span></p>
+            <p class="side-nav-category"><span>Tv's & componets</span><span class="arrow">&#8250</span></p>
+            <p class="side-nav-category"><span>Portable audio & Headphones</span><span class="arrow">&#8250</span></p>
+        </div>
+        <div id="home-banner-container">
+            <div class="banner home-banner">
+                <h3>Get a new or used electronic gadget of your choice</h3>
+                <p class="banner-info-text">Get anyhting from smartphone, cameras, laptops and more at cheaper price than ever.</p>
+                <p class="action-button"><span style="margin-right: 5px;">Get now</span> <span>&#8594;</span></p>
+            </div>
+        </div>
+        <div id="home-category-container">
+            <h3>Popular categories</h3>
+            <div class="category-row">
+                <div class="category">
+                    <div class="image">
+                        <img src="./category_images/smartphones.webp" title="smartphone">
+                    </div>
+                    <p>Smartphones</p>
+                </div>
+                <div class="category">
+                    <div class="image">
+                        <img src="./category_images/laptop.webp" title="Laptop">
+                    </div>
+                    <p>Laptops</p>
+                </div>
+                <div class="category">
+                    <div class="image">
+                        <img src="./category_images/games.webp" title="games">
+                    </div>
+                    <p>Videos games & Consoles</p>
+                </div>
+            </div>
+            <div class="category-row">
+                <div class="category">
+                    <div class="image">
+                        <img src="./category_images/camera.webp" title="camera">
+                    </div>
+                    <p>Cameras</p>
+                </div>
+                <div class="category">
+                    <div class="image">
+                        <img src="./category_images/drone.webp" title="drone">
+                    </div>
+                    <p>Drones</p>
+                </div>
+
+                <div class="category">
+                    <div class="image">
+                        <img src="./category_images/tv.webp" title="Tvs">
+                    </div>
+                    <p>LED & LCD Tv's</p>
+                </div>
+            </div>
+            <div class="category-row">
+                <div class="category">
+                    <div class="image">
+                        <img src="./category_images/desktop.jpg" title="camera">
+                    </div>
+                    <p>Desktop</p>
+                </div>
+                <div class="category">
+                    <div class="image">
+                        <img src="./category_images/printer.png" title="drone">
+                    </div>
+                    <p>Printers</p>
+                </div>
+
+                <div class="category">
+                    <div class="image">
+                        <img src="./category_images/router.jpg" title="Tvs">
+                    </div>
+                    <p>Routers</p>
+                </div>
+            </div>
+        </div>
+        <div class="banner home-postadd-banner">
+            <h3>Do you have a product to sell?</h3>
+            <p class="banner-info-text">Advertise your product to thousands of customers for free and easly</p>
+            <p class="action-button"><span style="margin-right: 5px;"><a href="uploadform.html">Post your Add now</a></span> <span>&#8594;</span></p>
+        </div>
+
+
+
+        <!---------product list   ------>
+
+        <div id="product-list-container">
+                <!-------- product -------->
+            <div class="product-container is-shadow is-round">
+                <div class="image-container" style="position: relative;">
+                    <a href="#"><img class="product-image" src="./photos/image1.jpg"></a>
+                    <div class="premium-tag">
+                        <span>Premium</span>
+                    </div>
+                </div>
+                <div class="detail-container is-white">
+                    <div class="item-name is-border-bottom center">
+                        <span>Samsung galaxy s10</span>
+                    </div>
+                    <div class="item-price center">
+                        <span style="padding: 0 4px">1,200,000 Tshs.</span>
+                    </div>
+                </div>
+            </div>
+                <!-------------- product ------------>
+            <div class="product-container is-shadow is-round">
+                    <div class="image-container" style="position: relative;">
+                        <img class="product-image" src="./product_images/image9.jpg">
+                        <div class="premium-tag">
+                            <span>Premium</span>
+                        </div>
+                    </div>
+                <div class="detail-container is-white">
+                    <div class="item-name is-border-bottom center">
+                        <span>Iphone 8+ used</span>
+                    </div>
+                    <div class="item-price center">
+                        <span style="padding: 0 4px">600,000 Tshs.</span>
+                    </div>
+                </div>
+            </div>
+                <!-------- product -------->
+            <div class="product-container is-shadow is-round">
+                <div class="image-container" style="position: relative;">
+                    <img class="product-image" src="./product_images/image10.jpg">
+                    <div class="premium-tag">
+                        <span>Premium</span>
+                    </div>
+                </div>
+                <div class="detail-container is-white">
+                    <div class="item-name is-border-bottom center">
+                        <span>Iphone 6 plus refubshed</span>
+                    </div>
+                    <div class="item-price center">
+                        <span style="padding: 0 4px">500,000 Tshs.</span>
+                    </div>
+                </div>
+            </div>
+                <!-------- product -------->
+            <div class="product-container is-shadow is-round">
+                    <div class="image-container" style="position: relative;">
+                        <img class="product-image" src="./product_images/image6.jpg">
+                        <div class="premium-tag">
+                            <span>Premium</span>
+                        </div>
+                    </div>
+                <div class="detail-container is-white">
+                    <div class="item-name is-border-bottom center">
+                        <span>Canon x-200 used</span>
+                    </div>
+                    <div class="item-price center">
+                        <span style="padding: 0 4px">650,000 Tshs.</span>
+                    </div>
+                </div>
+            </div>
+                <!-------- product -------->
+            <div class="product-container is-shadow is-round">
+                <div class="image-container" style="position: relative;">
+                    <img class="product-image" src="./product_images/image4.jpg">
+                    <div class="premium-tag">
+                        <span>Premium</span>
+                    </div>
+                </div>
+                <div class="detail-container is-white">
+                    <div class="item-name is-border-bottom center">
+                        <span>Dell Latitude E-8000, used, battery not ok.</span>
+                    </div>
+                    <div class="item-price center">
+                        <span style="padding: 0 4px">500,000 Tshs.</span>
+                    </div>
+                </div>
+            </div>
+                <!-------- product -------->
+            <div class="product-container is-shadow is-round">
+                <div class="image-container" style="position: relative;">
+                    <img class="product-image" src="./product_images/image2.jpg">
+                    <div class="premium-tag">
+                        <span>Premium</span>
+                    </div>
+                </div>
+                <div class="detail-container is-white">
+                    <div class="item-name is-border-bottom center">
+                        <span>Dell Pavilion 6, used</span>
+                    </div>
+                    <div class="item-price center">
+                        <span style="padding: 0 4px">700,000 Tshs.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-container is-shadow is-round">
+                <div class="image-container" style="position: relative;">
+                    <a href="#"><img class="product-image" src="./photos/image1.jpg"></a>
+                    <div class="premium-tag">
+                        <span>Premium</span>
+                    </div>
+                </div>
+                <div class="detail-container is-white">
+                    <div class="item-name is-border-bottom center">
+                        <span>Samsung galaxy s10</span>
+                    </div>
+                    <div class="item-price center">
+                        <span style="padding: 0 4px">1,200,000 Tshs.</span>
+                    </div>
+                </div>
+            </div>
+                <!-------------- product ------------>
+            <div class="product-container is-shadow is-round">
+                    <div class="image-container" style="position: relative;">
+                        <img class="product-image" src="./product_images/image9.jpg">
+                        <div class="premium-tag">
+                            <span>Premium</span>
+                        </div>
+                    </div>
+                <div class="detail-container is-white">
+                    <div class="item-name is-border-bottom center">
+                        <span>Iphone 8+ used</span>
+                    </div>
+                    <div class="item-price center">
+                        <span style="padding: 0 4px">600,000 Tshs.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-container is-shadow is-round">
+                <div class="image-container" style="position: relative;">
+                    <a href="#"><img class="product-image" src="./photos/image4.jpg"></a>
+                    <div class="premium-tag">
+                        <span>Premium</span>
+                    </div>
+                </div>
+                <div class="detail-container is-white">
+                    <div class="item-name is-border-bottom center">
+                        <span>Samsung galaxy s10</span>
+                    </div>
+                    <div class="item-price center">
+                        <span style="padding: 0 4px">1,200,000 Tshs.</span>
+                    </div>
+                </div>
+            </div>
+                <!-------------- product ------------>
+            <div class="product-container is-shadow is-round">
+                    <div class="image-container" style="position: relative;">
+                        <img class="product-image" src="./product_images/image2.jpg">
+                        <div class="premium-tag">
+                            <span>Premium</span>
+                        </div>
+                    </div>
+                <div class="detail-container is-white">
+                    <div class="item-name is-border-bottom center">
+                        <span>Iphone 8+ used</span>
+                    </div>
+                    <div class="item-price center">
+                        <span style="padding: 0 4px">600,000 Tshs.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-container is-shadow is-round">
+                <div class="image-container" style="position: relative;">
+                    <a href="#"><img class="product-image" src="./photos/image1.jpg"></a>
+                    <div class="premium-tag">
+                        <span>Premium</span>
+                    </div>
+                </div>
+                <div class="detail-container is-white">
+                    <div class="item-name is-border-bottom center">
+                        <span>Samsung galaxy s10</span>
+                    </div>
+                    <div class="item-price center">
+                        <span style="padding: 0 4px">1,200,000 Tshs.</span>
+                    </div>
+                </div>
+            </div>
+                <!-------------- product ------------>
+            <div class="product-container is-shadow is-round">
+                    <div class="image-container" style="position: relative;">
+                        <img class="product-image" src="./product_images/image3.jpg">
+                        <div class="premium-tag">
+                            <span>Premium</span>
+                        </div>
+                    </div>
+                <div class="detail-container is-white">
+                    <div class="item-name is-border-bottom center">
+                        <span>Iphone 8+ used</span>
+                    </div>
+                    <div class="item-price center">
+                        <span style="padding: 0 4px">600,000 Tshs.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagination center">
+            <span class="pagination-item">&laquo;</span>
+            <span class="pagination-item">1</span>
+            <span class="pagination-item">2</span>
+            <span class="pagination-item">3</span>
+            <span class="pagination-item">&raquo;</span>
+        </div>
+
+        <!------ how to buy and sell with kumenoga ----->
+
+
+
+        <div class="how-to-buy-container is-shadow">
+            <p class="how-to-head is-shadow">How to buy?</p>
+            <div class="buy-tip buy-tip-first">
+                <p class="step">Step 1</p>
+                <span><i class="fa fa-list"></i></span>
+                <p class="info">Choose a product you wan't to buy</p>
+            </div>
+
+            <div class="buy-tip">
+                <p class="step">Step 2</p>
+                <span><i class="fa fa-phone"></i></span>
+                <p class="info">Contact a seller.</p>
+            </div>
+
+            <div class="buy-tip">
+                <p class="step">Step 3</p>
+                <span><i class="fa fa-handshake"></i></span>
+                <p class="info">Meet with seller in person, in the public/open place.</p>
+            </div>
+
+            <div class="buy-tip buy-tip-last">
+                <p class="step">Step 4</p>
+                <span><i class="fa fa-thumbs-up"></i></span>
+                <p class="info">Test a product, make sure it works, pay.</p>
+            </div>
+        </div>
+
+        <div class="how-to-buy-container safety-tips is-shadow">
+            <p class="how-to-head">Personal Safety</p>
+            <ul>
+                <li>
+                    Do not send money to someone you haven't met in person.
+                </li>
+                <li>
+                    When meeting someone for first time, please remember to meet on public and open places like cafe, bank, shopping center, etc.
+                </li>
+                <li>
+                    Do not meet with a seller/ buyer in a secluded / hidden place, do not invite strangers at home.
+                </li>
+                <li>
+                    Consider having a friend accompany you when meeting with buyer or seller.
+                </li>
+                <li>
+                    Never give out financial info (Bank account, social security, etc.) to anyone when buying online.
+                </li>
+            </ul>
+        </div>
+
+    
+            <!------ social-icons---------->
+        <div id="social-media" class="vertical-center is-border-top">
+            <i class="fab fa-facebook-f social-icon"></i>
+            <i class="fab fa-instagram social-icon"></i>
+            <i class="fab fa-linkedin social-icon"></i>
+            <i class="fab fa-youtube social-icon"></i>
+            <i class="fab fa-pinterest social-icon"></i>
+        </div>
+    
+            <!------- footer ------->
+        <div id="footer" class="">
+            <div id="about-us" class="footer-item is-border-bottom">About Us</div>
+            <div id="privacy-policy" class="footer-item is-border-bottom">Privacy Policy</div>
+            <div id="terms" class="footer-item is-border-bottom">Terms Of Use</div>
+            <div id="legal-notice" class="footer-item is-border-bottom">Legal Notice</div>
+            <div id="customer-service" class="footer-item is-border-bottom">Customer Service</div>
+            <div id="upcoming-projs" class="footer-item is-border-bottom">Upcoming Projects</div>
+        </div>
+    
+        <div id="created-by">
+            <div class="my-name">Created by Barack Ashery</div>
+            <div class="rights">All rights reserved</div>
+            <div class="copyright">&#169 2019</div>
+        </div>
+            
+            <!------- whatsapp floating icon -------->
+        <div class="whatsapp-float center">
+            <i class="fab fa-whatsapp my-float"></i>
+        </div>
+
+        <script type="text/javascript" src="header.js"></script>
+        <script type="text/javascript" src="sidenav.js"></script>
+        <script type="text/javascript">
+            /******* Capturing some simple analytics services ********/
+            var _gauges = _gauges || [];
+            (function() {
+                var t   = document.createElement('script');
+                t.type  = 'text/javascript';
+                t.async = true;
+                t.id    = 'gauges-tracker';
+                t.setAttribute('data-site-id', '5d3beeda3a586c623a300260');
+                t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+                t.src = 'https://d2fuc4clr7gvcn.cloudfront.net/track.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(t, s);
+            })();
+        </script>
+    </body>
+</html>
